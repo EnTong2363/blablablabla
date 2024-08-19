@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!--Add font-family-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Protest+Revolution|Merienda|Comfortaa|Zain">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>The Huskitory</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: lightsalmon;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="../CSS folder/lwscreen.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/main.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/lwDetail.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/video.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/backbtn.css" />
+</head>
+
+<body>
+
+    <!--navbar-->
+    <div id="navbar">
+        <a href="../mainpage/mainpage.html">Home</a>
+        <a href="../mainpage/about.html">About</a>
+        <div class="dropdown">
+            <button class="dropbutton" onclick="myFunction()">State
+                <i class="fa fa-caret-down"></i>
+                <!--a small triangle arrow-->
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../Selangor/backgroundVideo.html">Selangor</a>
+                <a href="../Sarawak/backgrooundVideo.html">Sarawak</a>
+                <a href="../Pahang/backgroundVideo.html">Pahang</a>
+                <a href="../Johor/backgroundVideo.html">Johor</a>
+                <a href="../Melaka/backgroundVideo.html">Melaka</a>
+                <a href="../Perak/backgroundVideo.html">Perak</a>
+                <a href="../Sabah/backgroundVideo.html">Sabah</a>
+                <a href="../Kedah/backgroundVideo.html">Kedah</a>
+                <a href="../Perlis/backgroundVideo.html">Perlis</a>
+                <a href="../Penang/backgroundVideo.html">Penang</a>
+                <a href="../Kelantan/backgroundVideo.html">Kelantan</a>
+                <a href="../Terengganu/backgroundVideo.html">Terengganu</a>
+                <a href="../Negeri_Sembilan/backgroundVideo.html">Negeri Sembilan</a>
+            </div>
+        </div>
+        <a href="../mainpage/contact.html">Contact</a>
+    </div>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbutton')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+
+    </script>
+    <!--End navbar-->
+
+    <!--opening-->
+    <div class="container">
+        <img src="huskies-group-photo-scaled.jpg" alt="huskitory" style="width: 100%; height: 800px;">
+    </div>
+
+    <!--introduction-->
+    <div class="main">
+        <br>
+        <h2 style="font-family: 'Protest Revolution', serif; font-size: 40px;">About The Huskitory</h2>
+        <p>My fascination with Siberian Huskies began in my youth, and adopting my first Husky, Sugar, in 2010 was a
+            dream come true. They say you can't just have one Husky, and that proved true for me. As my collection of
+            Huskies grew, I created The Huskitory, a special place dedicated to my passion.
+        </p>
+        <br>
+        <p>
+            Establishing The Huskitory was a pivotal moment, allowing me to leave my previous career and fully commit to
+            sharing my love for Huskies. Here, we don't just showcase these magnificent dogs but also spread knowledge,
+            joy, and hope to visitors from around the world. The Huskitory has become more than a gallery; it's a home
+            that bridges the gap between people and dogs, offering a harmonious blend of nature and humanity.
+        </p>
+        <br>
+        <h2 style="font-family: 'Protest Revolution', serif; font-size: 40px;">Detailed Information</h2>
+        <p></p>
+    </div>
+
+    <div class="card" style="background-color: orange;">
+
+        <div class="image">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7563.167004793945!2d102.21133309895386!3d2.2109519941329463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d1f069286ef2e9%3A0x4153e538d84f4abc!2sThe%20Huskitory!5e1!3m2!1szh-CN!2smy!4v1723190060234!5m2!1szh-CN!2smy"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="title" style="color: white;">
+                <h3>The Huskitory Location</h3>
+            </div>
+            <div class="descript" style="color: white;">
+                <p>You can view the location here.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card" style="background-color: orange;">
+
+        <div class="image">
+            <img src="5.jpg" alt="open" />
+            <div class="title" style="color: white;">
+                <h3>Operating Hours</h3>
+            </div>
+            <div class="descript" style="color: white;">
+                <p> 11.00 AM ~ 8.00 PM (Closed Wednesday)</p>
+                <br>
+                <p>You can follow their <a href="https://www.facebook.com/huskitory/" style="color:yellow;">facebook
+                        page</a>.</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card" style="background-color: orange;">
+
+        <div class="image">
+            <img src="huskitory-malacca.jpg" alt="more" />
+            <div class="title" style="color: white;">
+                <h3>More Information</h3>
+            </div>
+            <div class="descript" style="color: white;">
+                <p>If you want to see more packages or information, please <a
+                        href="https://huskitory.com.my/?gad_source=1&gclid=CjwKCAjw_Na1BhAlEiwAM-dm7Px97b-hOO5x4wE1_1_hk8eX4kbaQWMZtC4gFIPozjZPDUTfhZF1KRoCmkQQAvD_BwE"
+                        style="color: yellow;">click
+                        here.</a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="adjust">
+        <p><a href="MelakaMenu.html" class="button">Back</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Discover Malaysia | <a href="../mainpage/mainpage.html">Privacy Policy</a> | <a
+                href="../mainpage/mainpage.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Malaysia Travel Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../CSS folder/navbar1.css">
+    <link rel="stylesheet" type="text/css" href="../CSS folder/backToTop.css">
+    <link rel="stylesheet" type="text/css" href="../CSS folder/footer.css">
+    <link rel="stylesheet" type="text/css" href="../CSS folder/about.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Our Team</h1>
+        </div>
+        <div class="sub-container">
+            <div class="teams">
+                <img src="men.jpg" alt="men">
+                <div class="name">TAN YEE HERN</div>
+                <div class="desig">Developer</div>
+                <div class="about">
+                    I'm Benjamin Tan, a Malaysian with a love for storytelling and our nation's diverse heritage. 
+                    Join me as I share travel tips, cultural insights, and the unique stories that make Malaysia special.
+                </div>
+            </div>
+            
+            <div class="teams">
+                <img src="women1.jpg" alt="women1">
+                <div class="name">Kong En Tong</div>
+                <div class="desig">Designer</div>
+                <div class="about">
+                    I'm Kong En Tong, your budget adventure guide at "Ringgit Ranger." I've mastered the art of 
+                    exploring Malaysia on a shoestring. Join me for tips on cheap stays, street food deals, and 
+                    discovering Malaysia's beauty without breaking the bank!
+                </div>  
+            </div>
+            
+            <div class="teams">
+                <img src="women2.jpg" alt="women2">
+                <div class="name">Wong Sim Bao</div>
+                <div class="desig">Manager</div>
+                <div class="about">
+                    I'm Wong Sim Bao, an environmental scientist turned travel blogger. Join me as we explore 
+                    Malaysia's natural beauty while promoting sustainable tourism. Let's travel mindfully, support 
+                    local communities, and preserve our stunning landscapes!
+                </div>
+            </div>
+            
+            <div class="teams">
+                <img src="women3.jpg" alt="women3">
+                <div class="name">Leang Shuet En</div>
+                <div class="desig">Designer</div>
+                <div class="about">
+                    Selamat datang to "Hidden Gems of Malaysia"! I'm Leang Shuet En, a proud Pinang native. 
+                    Join me as we uncover the beauty and culture of Malaysia's hidden spots, from Penang's night 
+                    markets to Terengganu's serene beaches. Let's explore Malaysia's best-kept secrets together!
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    
+
+    <div class="nav-container">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <nav class="nav">
+            <div class="nav-close">&times;</div>
+            <ul>
+                <li><a href="../mainpage/mainpage.html">Home</a></li>
+                <li><a href="../mainpage/about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">States</a>
+                    <div class="dropdown-content">
+                        <a href="../Selangor/backgroundVideo.html">Selangor</a>
+                        <a href="../Sarawak/backgrooundVideo.html">Sarawak</a>
+                        <a href="../Pahang/backgroundVideo.html">Pahang</a>
+                        <a href="../Johor/backgroundVideo.html">Johor</a>
+                        <a href="../Melaka/backgroundVideo.html">Melaka</a>
+                        <a href="../Perak/backgroundVideo.html">Perak</a>
+                        <a href="../Sabah/backgroundVideo.html">Sabah</a>
+                        <a href="../Kedah/backgroundVideo.html">Kedah</a>
+                        <a href="../Perlis/backgroundVideo.html">Perlis</a>
+                        <a href="../Penang/backgroundVideo.html">Penang</a>
+                        <a href="../Kelantan/backgroundVideo.html">Kelantan</a>
+                        <a href="../Terengganu/backgroundVideo.html">Terengganu</a>
+                        <a href="../Negeri_Sembilan/backgroundVideo.html">Negeri Sembilan</a>
+                    </div>
+                </li>
+                <li><a href="../mainpage/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Discover Malaysia | <a href="../mainpage/mainpage.html">Privacy Policy</a> | <a
+                href="../mainpage/mainpage.html">Terms of Service</a></p>
+    </footer>
+
+    <!--scroll to top-->
+    <div onclick="scrollToTop()" class="scrollTop">Back To Top</div>
+
+    <script>
+        // Close nav when link is clicked
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('nav-toggle').checked = false;
+            });
+        });
+
+        document.querySelector('.nav-close').addEventListener('click', () => {
+            document.getElementById('nav-toggle').checked = false;
+        });
+
+        document.getElementById('nav-home').addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            document.getElementById('nav-toggle').checked = false;
+        });
+
+        document.getElementById('nav-states').addEventListener('click', (e) => {
+            e.preventDefault();
+            const boxesSection = document.querySelector('.boxes');
+            boxesSection.scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('nav-toggle').checked = false;
+        });
+
+        /*back to top*/
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>

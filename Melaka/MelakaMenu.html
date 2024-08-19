@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!--Add font-family-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Protest+Revolution|Merienda|Comfortaa">
+
+    <title>Melaka</title>
+
+    <link rel="stylesheet" href="../CSS folder/menuMelaka.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="../mainpage/mainpage.html">HOME</a></li>
+                    <li><a href="../mainpage/about.html">ABOUT</a></li>
+                    <li><a href="../mainpage/contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h1>Melacca</h1>
+                <p>Discover the enchanting streets of Melaka, where rich heritage seamlessly blends with lively street
+                    culture. Explore historic landmarks, savor unique culinary experiences, and create unforgettable
+                    memories in 2024.
+                </p>
+            </div>
+            <div class="col">
+
+                <div class="card card1" data-link="AFamosa.html"></div>
+
+                <div class="card card2" data-link="HangTC.html"></div>
+
+                <div class="card card3" data-link="thehuski.html"></div>
+
+                <div class="card card4" data-link="SkyTower.html"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Select all cards
+        const cards = document.querySelectorAll('.card');
+
+        // Add click event listener to each card
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Toggle the 'active' class on the clicked card
+                window.location.href = card.getAttribute('data-link');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

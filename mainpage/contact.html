@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="../CSS folder/navbar1.css">
+    <link rel="stylesheet" type="text/css" href="../CSS folder/backToTop.css">
+    <link rel="stylesheet" type="text/css" href="../CSS folder/footer.css">
+    <link rel="stylesheet" type="text/css" href="../CSS folder/contact.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="introduction">
+            <h1><strong>Contact Us</strong></h1>
+        </div>
+            
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="Address">Address:</label>
+                <input type="tel" id="address" name="Address" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Phone</h3>
+                <p>+60 125508888</p>
+                <p>Monday - Friday: 9am - 6pm MYT</p>
+            </div>
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p>info@utar.edu.my</p>
+                <p>Sometimes we respond in a few hours, sometimes it takes a few days. Thanks for your understanding!</p>
+            </div>
+            <div class="contact-item">
+                <h3>Address</h3>
+                <p>UTAR Kampar Campus Jalan Universiti, </p>
+                <p>Bandar Barat 31900, Kampar, </p>
+                <p>Perak, Malaysia</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <h2>Message Sent!</h2>
+            <p>Thank you for contacting us. We'll get back to you as soon as possible.</p>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+
+    <div class="nav-container">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <nav class="nav">
+            <div class="nav-close">&times;</div>
+            <ul>
+                <li><a href="../mainpage/mainpage.html">Home</a></li>
+                <li><a href="../mainpage/about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">States</a>
+                    <div class="dropdown-content">
+                        <a href="../Selangor/backgroundVideo.html">Selangor</a>
+                <a href="../Sarawak/backgrooundVideo.html">Sarawak</a>
+                <a href="../Pahang/backgroundVideo.html">Pahang</a>
+                <a href="../Johor/backgroundVideo.html">Johor</a>
+                <a href="../Melaka/backgroundVideo.html">Melaka</a>
+                <a href="../Perak/backgroundVideo.html">Perak</a>
+                <a href="../Sabah/backgroundVideo.html">Sabah</a>
+                <a href="../Kedah/backgroundVideo.html">Kedah</a>
+                <a href="../Perlis/backgroundVideo.html">Perlis</a>
+                <a href="../Penang/backgroundVideo.html">Penang</a>
+                <a href="../Kelantan/backgroundVideo.html">Kelantan</a>
+                <a href="../Terengganu/backgroundVideo.html">Terengganu</a>
+                <a href="../Negeri_Sembilan/backgroundVideo.html">Negeri Sembilan</a>
+                    </div>
+                </li>
+                <li><a href="../mainpage/contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Discover Malaysia | <a href="../mainpage/mainpage.html">Privacy Policy</a> | <a
+                href="../mainpage/mainpage.html">Terms of Service</a></p>
+    </footer>
+
+    <!--scroll to top-->
+    <div onclick="scrollToTop()" class="scrollTop">Back To Top</div>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', (event) => {
+            event.preventDefault();
+            document.getElementById('success-modal').style.display = 'block';
+            document.getElementById('contact-form').reset();
+        });
+
+        document.getElementById('close-modal').addEventListener('click', () => {
+            document.getElementById('success-modal').style.display = 'none';
+        });
+
+        // Close nav when link is clicked
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('nav-toggle').checked = false;
+            });
+        });
+
+        document.querySelector('.nav-close').addEventListener('click', () => {
+            document.getElementById('nav-toggle').checked = false;
+        });
+
+        document.getElementById('nav-home').addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            document.getElementById('nav-toggle').checked = false;
+        });
+
+        document.getElementById('nav-states').addEventListener('click', (e) => {
+            e.preventDefault();
+            const boxesSection = document.querySelector('.boxes');
+            boxesSection.scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('nav-toggle').checked = false;
+        });
+
+        /*back to top*/
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        document.getElementById('contact-form').addEventListener('submit', (event) => {
+            event.preventDefault();
+    
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const address = document.getElementById('address').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+    
+            // Create an object with the form data
+            const contactData = {
+                name: name,
+                email: email,
+                phone: phone,
+                address: address,
+                subject: subject,
+                message: message,
+                timestamp: new Date().toISOString()
+            };
+    
+            // Get existing contacts from localStorage or initialize an empty array
+            let contacts = JSON.parse(localStorage.getItem('contacts')) || [];
+    
+            // Add new contact data to the array
+            contacts.push(contactData);
+    
+            // Save updated contacts array back to localStorage
+            localStorage.setItem('contacts', JSON.stringify(contacts));
+    
+            // Show success modal
+            document.getElementById('success-modal').style.display = 'block';
+    
+            // Reset form
+            document.getElementById('contact-form').reset();
+        });
+
+        // Close modal when close button is clicked
+        document.getElementById('close-modal').addEventListener('click', () => {
+            document.getElementById('success-modal').style.display = 'none';
+        });
+
+        // Function to display all stored contacts (for demonstration purposes)
+        function displayStoredContacts() {
+            const contacts = JSON.parse(localStorage.getItem('contacts')) || [];
+            console.log('Stored Contacts:', contacts);
+        }
+
+        // You can call this function to see stored contacts in the console
+        // displayStoredContacts();
+    </script>
+</body>
+
+</html>

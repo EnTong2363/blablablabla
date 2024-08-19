@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabah</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS folder/sabahcss.css">
+    <link rel="stylesheet" href="../CSS folder/navbar.css">
+    <link rel="stylesheet" href="../CSS folder/dropdown.css">
+</head>
+
+<body>
+
+   <!--navbar-->
+   <div id="navbar">
+    <a href="../mainpage/mainpage.html">Home</a>
+    <a href="../mainpage/about.html">About</a>
+    <div class="dropdown">
+        <button class="dropbutton" onclick="myFunction()">State
+            <i class="fa fa-caret-down"></i>
+            <!--a small triangle arrow-->
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="../Selangor/backgroundVideo.html">Selangor</a>
+            <a href="../Sarawak/backgrooundVideo.html">Sarawak</a>
+            <a href="../Pahang/backgroundVideo.html">Pahang</a>
+            <a href="../Johor/backgroundVideo.html">Johor</a>
+            <a href="../Melaka/backgroundVideo.html">Melaka</a>
+            <a href="../Perak/backgroundVideo.html">Perak</a>
+            <a href="../Sabah/backgroundVideo.html">Sabah</a>
+            <a href="../Kedah/backgroundVideo.html">Kedah</a>
+            <a href="../Perlis/backgroundVideo.html">Perlis</a>
+            <a href="../Penang/backgroundVideo.html">Penang</a>
+            <a href="../Kelantan/backgroundVideo.html">Kelantan</a>
+            <a href="../Terengganu/backgroundVideo.html">Terengganu</a>
+            <a href="../Negeri_Sembilan/backgroundVideo.html">Negeri Sembilan</a>
+        </div>
+    </div>
+    <a href="../mainpage/contact.html">Contact</a>
+</div>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbutton')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+    </script>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Explore Sabah</h1>
+            <p>Discover the natural wonders and diverse cultures of Sabah, Malaysia. Enjoy the breathtaking landscapes
+                and vibrant traditions of this unique region.</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="about">
+            <h2>What About Sabah</h2>
+            <div class="image-container">
+                <p class="animated-text">Sabah, located on the northern portion of Borneo, is known for its rich
+                    biodiversity, stunning islands, and vibrant cultures. It's home to Malaysia's tallest peak, Mount
+                    Kinabalu, and some of the world's oldest rainforests.</p>
+                <p class="animated-text">Sabah offers a unique blend of adventure and relaxation, from exploring the
+                    depths of the Bornean jungle to lounging on pristine beaches. Its capital, Kota Kinabalu, is a
+                    gateway to both urban excitement and natural beauty.</p>
+                <p class="animated-text">Visitors are often enchanted by the warmth and hospitality of Sabah's diverse
+                    ethnic communities, including the Kadazan-Dusun, Bajau, and Murut peoples, each with their own rich
+                    traditions and festivals.</p>
+                <p class="animated-text">One of Sabah's must-visit spots is the Kinabalu National Park, a UNESCO World
+                    Heritage Site that attracts nature lovers and trekkers from around the globe. The park is a
+                    sanctuary for thousands of species of flora and fauna, many of which are endemic to Borneo.</p>
+            </div>
+        </section>
+
+        <section class="attractions">
+            <h2>Attractions</h2>
+            <div class="card-container">
+                <a href="https://www.mountkinabalu.com/" class="card">
+                    <h3>Mount Kinabalu</h3>
+                    <p>Describe as the Top 10 epic hikes by Lonely Planet, Mount Kinabalu stands tall at 4, 095.2 metres
+                        & attracts climbers from all walks of life all year round.</p>
+                    <div class="card-attribution"><img src="mount_kinabalu.jpg" alt="Mount Kinabalu"></div>
+                </a>
+                <a href="https://www.klook.com/en-MY/blog/sabah-semporna-travel-guide/" class="card">
+                    <h3>Semporna</h3>
+                    <p>Located in the district of Tawau division, in the east coast of Sabah, Malaysian Borneo. The town
+                        itself is fairly small in size and can easily be explored by foot or by taxi.</p>
+                    <div class="card-attribution"><img src="semporna.jpg" alt="Semporna"></div>
+                </a>
+                <a href="https://www.sabahparks.org.my/kinabalu-park" class="card">
+                    <h3>Kinabalu Park</h3>
+                    <p>Home to the majestic Mount Kinabalu, Kinabalu Park flourishes abundantly with unique Bornean
+                        wildlife & is Malaysia's first UNESCO Heritage Site.</p>
+                    <div class="card-attribution"><img src="KinabaluPark.jpg" alt="Kinabalu Park"></div>
+                </a>
+                <a href="https://danumvalley.net/" class="card">
+                    <h3>Danum Valley</h3>
+                    <p>Step into 43,800 hectares of the quintessential Bornean experience - Danum v=Valley, boasting a
+                        variety of wildlife wonders and peppered with advantures.</p>
+                    <div class="card-attribution"><img src="Danumvalley.webp" alt="Danum Valley"></div>
+                </a>
+            </div>
+        </section>
+
+        <section class="getting-there">
+            <h2>Getting There</h2>
+            <h3 style="color: #3fa9da;">Click Picture for booking transportation</h3>
+
+            <h1> </h1>
+            <h4>Cheap Airplane Ticket to Sabah：</h4>
+            <p>
+                <a
+                    href="https://www.airasia.com/flight/en/gb?from=KUL&to=BKI&utm_content=nonbrand&gad_source=1&gclid=Cj0KCQjwq_G1BhCSARIsACc7NxoKMpSL9hgSXhXrdrsE3vAU_g_PPiTJbeC64fwpcSTmxh1A7PpAuaEaAkplEALw_wcB&gclsrc=aw.ds">
+                    <img src="airplanegif.gif" alt="Airplane" style="width: 100 px; height:200px;">
+                </a>
+            </p>
+
+            <p> </p>
+            <h4>Train to Sabah：</h4>
+            <p><a href="https://railway.sabah.gov.my/">
+                    <img src="train gif.gif" alt="Train" style="width: 80 px; height: 200px;"></a></p>
+
+            <p> </p>
+            <h4>Bus to Sabah：</h4>
+            <p><a href="https://www.busonlineticket.com/booking/bus-guide.aspx?ddDestinations=kota-kinabalu">
+                    <img src="busgif.gif" alt="Bus" style="width: 80 px; height:200px;">
+                </a>
+        </section>
+
+        <div class="back-link">
+            <a href="../mainpage/mainpage.html" class="btn">Back to Home Page</a>
+        </div>
+
+
+
+    </main>
+
+    <button class="btn" onclick="window.scrollTo({top:0,behavior: 'smooth' });">Back to Top</button>
+
+    <script>
+        // Show or hide the back-to-top button based on scroll position
+        window.addEventListener('scroll', function () {
+            const button = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Discover Malaysia | <a href="../mainpage/mainpage.html">Privacy Policy</a> | <a
+                href="../mainpage/mainpage.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+
+</html>

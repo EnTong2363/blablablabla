@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Satu Malaysia</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS folder/welcome.css"/>
+</head>
+
+<body>
+    <div id="header">
+        <h2>SATU MALAYSIA</h2>
+        <div id="content">
+            <!-- Content will be loaded here -->
+        </div>
+        <button id="exploreBtn">Explore</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            let clickCount = 0; // Initialize a click counter
+
+            $("#exploreBtn").click(function () {
+                clickCount++; // Increment click count on each click
+
+                if (clickCount === 1) {
+                    // First click: Show the content
+                    if (confirm("MALAYSIA BOLEH !!!")) {
+                        $("#content").html(`
+                            <h2>Welcome to the webpage of SATU MALAYSIA</h2>
+                            <p>Continue to explore this beautiful country</p>
+                        `).addClass('show');
+                    }
+                } else if (clickCount === 2) {
+                    // Second click: Redirect to mainpage.html
+                    window.location.href = 'mainpage/mainpage.html'; // Change this to your correct path
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

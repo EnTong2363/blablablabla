@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terengganu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS folder/terengganustyle.css">
+    <link rel="stylesheet" href="../CSS folder/navbar.css">
+    <link rel="stylesheet" href="../CSS folder/dropdown.css">
+    
+</head>
+<body>
+
+    <!--navbar-->
+    <div id="navbar">
+        <a href="../mainpage/mainpage.html">Home</a>
+        <a href="../mainpage/about.html">About</a>
+        <div class="dropdown">
+            <button class="dropbutton" onclick="myFunction()">State
+                <i class="fa fa-caret-down"></i>
+                <!--a small triangle arrow-->
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../Selangor/backgroundVideo.html">Selangor</a>
+                <a href="../Sarawak/backgrooundVideo.html">Sarawak</a>
+                <a href="../Pahang/backgroundVideo.html">Pahang</a>
+                <a href="../Johor/backgroundVideo.html">Johor</a>
+                <a href="../Melaka/backgroundVideo.html">Melaka</a>
+                <a href="../Perak/backgroundVideo.html">Perak</a>
+                <a href="../Sabah/backgroundVideo.html">Sabah</a>
+                <a href="../Kedah/backgroundVideo.html">Kedah</a>
+                <a href="../Perlis/backgroundVideo.html">Perlis</a>
+                <a href="../Penang/backgroundVideo.html">Penang</a>
+                <a href="../Kelantan/backgroundVideo.html">Kelantan</a>
+                <a href="../Terengganu/backgroundVideo.html">Terengganu</a>
+                <a href="../Negeri_Sembilan/backgroundVideo.html">Negeri Sembilan</a>
+            </div>
+        </div>
+        <a href="../mainpage/contact.html">Contact</a>
+    </div>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbutton')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+    </script>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Explore Terengganu</h1>
+            <p>Discover the natural wonders and rich cultural heritage of Terengganu, Malaysia. Enjoy the breathtaking coastal landscapes and vibrant traditions of this unique state.</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="about">
+            <h2>What About Terengganu</h2>
+            <div class="image-container">
+                <p class="animated-text">Terengganu, located on the east coast of Peninsular Malaysia, is famous for its stunning islands, traditional crafts, and vibrant cultural heritage. The state boasts some of the most beautiful beaches in Malaysia, making it a favorite destination for tourists seeking sun, sea, and serenity.</p>
+                <p class="animated-text">Terengganu is a haven for nature lovers and cultural enthusiasts alike. Whether you're exploring the pristine waters of Redang Island or discovering the historic sites in Kuala Terengganu, there's something for everyone in this picturesque state.</p>
+                <p class="animated-text">The people of Terengganu are known for their warm hospitality and deep-rooted traditions. Visitors can experience local culture through the state's unique festivals, traditional dances, and exquisite handicrafts, such as batik and songket weaving.</p>
+                <p class="animated-text">One of Terengganu's highlights is the Crystal Mosque, a modern architectural marvel that glows beautifully at night. Additionally, the Terengganu State Museum, one of the largest museums in Southeast Asia, offers a glimpse into the state's rich history and cultural heritage.</p>
+            </div>
+        </section>
+        
+        <section class="attractions">
+            <h2>Attractions</h2>
+            <div class="card-container">
+                <a href="https://www.mountkinabalu.com/" class="card">
+                    <h3>Pulau Redang</h3>
+                    <p>Pulau Redang is one of the largest islands off the east coast of Malaysia, renowned for its crystal-clear waters, vibrant coral reefs, and luxurious resorts. It's a paradise for snorkeling and diving enthusiasts.</p>
+                    <div class="card-attribution"><img src="pulauredang.webp" alt="Pulau Redang"></div>
+                </a>
+                <a href="https://www.klook.com/en-MY/blog/sabah-semporna-travel-guide/" class="card">
+                    <h3>Crystal Mosque</h3>
+                    <p>The Crystal Mosque, located in Kuala Terengganu, is a stunning structure made of steel, glass, and crystal. It is not only a place of worship but also a major tourist attraction, especially when it is illuminated at night.</p>
+                    <div class="card-attribution"><img src="crystal_mosque_malaysia.jpg" alt="Crystal Mosque"></div>
+                </a>
+                <a href="https://www.sabahparks.org.my/kinabalu-park" class="card">
+                    <h3>Chinatown</h3>
+                    <p>Chinatown in Kuala Terengganu offers a glimpse into the state’s Chinese heritage. The area is filled with historic shophouses, vibrant markets, and delicious street food, making it a must-visit for culture enthusiasts.</p>
+                    <div class="card-attribution"><img src="chinatown.jpg" alt="Chinatown"></div>
+                </a>
+                <a href="https://danumvalley.net/" class="card">
+                    <h3>Muzium Negeri Terengganu</h3>    
+                    <p>The Terengganu State Museum is the largest museum in Southeast Asia. It features extensive exhibits on the state's history, culture, and natural heritage, housed in traditional Terengganu-style buildings.</p>
+                    <div class="card-attribution"><img src="muzium-negeri-terengganu.jpg" alt="Muzium Negeri Terengganu"></div>
+                </a>
+            </div>
+        </section>
+
+        <section class="getting-there">
+            <h2>Getting There</h2>
+            <h3 style="color: #a02fdc;">Click Picture for booking transportation</h3>
+
+            <h1> </h1>
+            <h4>Cheap Airplane Ticket to Terengganu：</h4>
+            <p>
+                <a href="https://www.airasia.com/flight/en/gb?from=KUL&to=TGG&gad_source=1&gclid=Cj0KCQjwq_G1BhCSARIsACc7Nxp7juP5P3FROAY-XmjCDWqg2mutEFgdxutPLZqdO6z5bvhbmkIzaucaAnTVEALw_wcB&gclsrc=aw.ds">
+                    <img src="airplanegif.gif" alt="Airplane" style="width: 100 px; height:200px;">
+                </a>
+            </p>
+
+            <p> </p>
+            <h4>Train to Terengganu：</h4>
+            <p><a href="https://www.ktmb.com.my/MapsAndRoute.html">
+                <img src="train gif.gif" alt="Train" style="width: 80 px; height: 200px;"></a></p>
+
+            <p> </p>
+            <h4>Bus to Terengganu：</h4>
+            <p><a href="https://www.redbus.my/bus/bus-online-ticket?gad_source=1&gclid=Cj0KCQjwq_G1BhCSARIsACc7NxraxEIINLEaSXd0EsQ5bhZkXBh55VqowpZMDSFC8pEv-gqJsR7MlHYaAkooEALw_wcB">
+                <img src="busgif.gif" alt="Bus" style="width: 80 px; height:200px;">
+                </a>
+        </section>
+        
+        <div class="back-link">
+            <a href="../mainpage/mainpage.html" class="btn">Back to Home Page</a>
+        </div>
+    </main>
+
+    <button class="btn" onclick="window.scrollTo({top:0,behavior: 'smooth' });">Back to Top</button>
+
+    <script>
+        // Show or hide the back-to-top button based on scroll position
+        window.addEventListener('scroll', function () {
+            const button = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Discover Malaysia | <a href="../mainpage/mainpage.html">Privacy Policy</a> | <a
+                href="../mainpage/mainpage.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>

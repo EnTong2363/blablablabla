@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!--Add font-family-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Protest+Revolution|Merienda|Comfortaa">
+
+    <title>Negeri Sembilan menu</title>
+
+    <link rel="stylesheet" href="../CSS folder/menuNegeriSembilan.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="../mainpage/mainpage.html">HOME</a></li>
+                    <li><a href="../mainpage/about.html">ABOUT</a></li>
+                    <li><a href="../mainpage/contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h1>Negeri Sembilan</h1>
+                <p>Malaysia is a country full of beauty at every turn, and Negeri Sembilan, a state on the western
+                    coast of Peninsular Malaysia, is no exception. Although smaller and less known than tourist hotspots
+                    like Melaka or Penang, Negeri Sembilan offers numerous must-see attractions and activities. The name
+                    "Sembilan," meaning "nine," symbolizes its status as the ninth state. From the stunning Port Dickson
+                    beaches to recreational forests and even an ostrich farm, each natural landscape and beach here is
+                    sure to impress.</p>
+            </div>
+            <div class="col">
+
+                <div class="card card1" data-link="ostrichFarm.html"></div>
+
+                <div class="card card2" data-link="alive3D.html"></div>
+
+                <div class="card card3" data-link="guaBatuMaloi.html"></div>
+
+                <div class="card card4" data-link="GunungDatuk.html"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Select all cards
+        const cards = document.querySelectorAll('.card');
+
+        // Add click event listener to each card
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Toggle the 'active' class on the clicked card
+                window.location.href = card.getAttribute('data-link');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

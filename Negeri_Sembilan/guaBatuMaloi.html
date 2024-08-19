@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Negeri Sembilan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../CSS folder/ET.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/navbar.css" />
+
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="../mainpage/mainpage.html">Home</a>
+        <a href="../mainpage/about.html">About</a>
+        <div class="dropdown">
+            <button class="dropbutton" onclick="myFunction()">State
+                <i class="fa fa-caret-down"></i>
+                <!--a small triangle arrow-->
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../Selangor/backgroundVideo.html">Selangor</a>
+                <a href="../Sarawak/backgrooundVideo.html">Sarawak</a>
+                <a href="../Pahang/backgroundVideo.html">Pahang</a>
+                <a href="../Johor/backgroundVideo.html">Johor</a>
+                <a href="../Melaka/backgroundVideo.html">Melaka</a>
+                <a href="../Perak/backgroundVideo.html">Perak</a>
+                <a href="../Sabah/backgroundVideo.html">Sabah</a>
+                <a href="../Kedah/backgroundVideo.html">Kedah</a>
+                <a href="../Perlis/backgroundVideo.html">Perlis</a>
+                <a href="../Penang/backgroundVideo.html">Penang</a>
+                <a href="../Kelantan/backgroundVideo.html">Kelantan</a>
+                <a href="../Terengganu/backgroundVideo.html">Terengganu</a>
+                <a href="../Negeri_Sembilan/backgroundVideo.html">Negeri Sembilan</a>
+            </div>
+        </div>
+        <a href="../mainpage/contact.html">Contact</a>
+    </div>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbutton')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+    </script>
+
+    <header>
+        <div class="container">
+            <h1 style="margin-bottom:20px"><br>Gua Batu Maloi</h1>
+            <img src="GuaBatuMaloi.webp" alt="Gua Batu Maloi" style="margin-bottom:20px">
+            <p>Gua Batu Maloi Cave is a must-visit for adventure seekers eager for challenges and thrills. This lush
+                rainforest offers everything from jungle trekking to climbing and crawling. As you journey from Mount
+                Tampin Forest to the cave, you'll eventually reach a section where darkness envelops you, adding to the
+                excitement.</p>
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>More about Gua Batu Maloi</h2>
+            <h3>1. Location</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15943.636780230136!2d102.2226441!3d2.5365085499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ce0512378e506f%3A0x759234746810d268!2sGua%20Batu%20Maloi%2C%20N113%2C%2073100%20Tampin%2C%20Negeri%20Sembilan!5e0!3m2!1sen!2smy!4v1723743659682!5m2!1sen!2smy"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <br><br>
+
+            <h3>2. Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QWs2q2oyxBk?si=F3DVv8Yv7n9xFoHl"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <br><br>
+
+            <h3>3. Hotels</h3>
+            <div class="hotel-list">
+                <!-- Hotel 1 -->
+                <div class="hotel">
+                    <div class="carousel">
+                        <div class="carousel-images" id="carousel-images-1">
+                            <img src="hotel2.1.1.webp" alt="Hotel 1 - Image 1">
+                            <img src="hotel2.1.2.webp" alt="Hotel 1 - Image 2">
+                            <img src="hotel2.1.3.webp" alt="Hotel 1 - Image 3">
+                        </div>
+                        <div class="carousel-buttons">
+                            <button onclick="prevSlide(1)">&#10094;</button>
+                            <button onclick="nextSlide(1)">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="name">Yussy Homestay at Afamosa Villa</div>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i> 4/5
+                    </div>
+                    <div class="description">
+                        Experience a perfect resort villa stay here at Yussy Homestay at Afamosa Villa. Conveniently
+                        situated in the Alor Gajah part of Malacca, this property puts you close to attractions and
+                        interesting dining options. Don't leave before paying a visit to the famous Jonker Street Night
+                        Market. This 5-star property features indoor pool to make your stay more indulgent and
+                        memorable.
+                    </div>
+                </div>
+
+                <!-- Hotel 2 -->
+                <div class="hotel">
+                    <div class="carousel">
+                        <div class="carousel-images" id="carousel-images-2">
+                            <img src="hotel2.2.1.webp" alt="Hotel 2 - Image 1">
+                            <img src="hotel2.2.2.webp" alt="Hotel 2 - Image 2">
+                            <img src="hotel2.2.3.webp" alt="Hotel 2 - Image 3">
+                        </div>
+                        <div class="carousel-buttons">
+                            <button onclick="prevSlide(2)">&#10094;</button>
+                            <button onclick="nextSlide(2)">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="name">Y&Z Hotel</div>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i> 3/5
+                    </div>
+                    <div class="description">
+                        Get your trip off to a great start with a stay at this property, which offers free Wi-Fi in all
+                        rooms. Conveniently situated in the Tampin part of Tampin, this property puts you close to
+                        attractions and interesting dining options. This 3-star property is packed with in-house
+                        facilities to improve the quality and joy of your stay.
+                    </div>
+                </div>
+
+                <!-- Hotel 3 -->
+                <div class="hotel">
+                    <div class="carousel">
+                        <div class="carousel-images" id="carousel-images-3">
+                            <img src="hotel2.3.1.webp" alt="Hotel 3 - Image 1">
+                            <img src="hotel2.3.2.webp" alt="Hotel 3 - Image 2">
+                            <img src="hotel2.3.3.jpg" alt="Hotel 3 - Image 3">
+                        </div>
+                        <div class="carousel-buttons">
+                            <button onclick="prevSlide(3)">&#10094;</button>
+                            <button onclick="nextSlide(3)">&#10095;</button>
+                        </div>
+                    </div>
+                    <div class="name">GHotel Centre Point</div>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <i class="fa fa-star-o"></i> 3.5/5
+                    </div>
+                    <div class="description">
+                        The car parking and the Wi-Fi are always free, so you can stay in touch and come and go as you
+                        please. Conveniently situated in the Tampin part of Tampin, this property puts you close to
+                        attractions and interesting dining options. This 3-star property is packed with in-house
+                        facilities to improve the quality and joy of your stay.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <p style="margin-bottom: 10px;"><a href="menuNegeriSembilan.html" class="button">Back</a></p>
+        <br><br>
+        </div>
+    </main>
+
+    <button class="back-to-top" onclick="window.scrollTo({top:0,behavior: 'smooth' });">Back to Top</button>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const button = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        });
+
+        var currentSlides = [0, 0, 0];
+
+        function showSlide(hotelIndex, slideIndex) {
+            var slides = document.getElementById("carousel-images-" + hotelIndex).getElementsByTagName("img");
+            if (slideIndex >= slides.length) { currentSlides[hotelIndex - 1] = 0 }
+            if (slideIndex < 0) { currentSlides[hotelIndex - 1] = slides.length - 1 }
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[currentSlides[hotelIndex - 1]].style.display = "block";
+        }
+
+        function nextSlide(hotelIndex) {
+            showSlide(hotelIndex, ++currentSlides[hotelIndex - 1]);
+        }
+
+        function prevSlide(hotelIndex) {
+            showSlide(hotelIndex, --currentSlides[hotelIndex - 1]);
+        }
+
+        window.onload = function () {
+            for (var i = 1; i <= 3; i++) {
+                showSlide(i, 0);
+            }
+        };
+
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Discover Malaysia | <a href="../mainpage/mainpage.html">Privacy Policy</a> | <a
+                href="../mainpage/mainpage.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+
+</html>

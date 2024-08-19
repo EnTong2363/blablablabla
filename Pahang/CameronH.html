@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!--Add font-family-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Protest+Revolution|Merienda|Comfortaa|Zain">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Cameron Highlands</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: palegreen;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="../CSS folder/lwscreen.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/main.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/lwDetail.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/video.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/backbtn.css" />
+</head>
+
+<body>
+
+    <!--navbar-->
+    <div id="navbar">
+        <a href="../mainpage/mainpage.html">Home</a>
+        <a href="../mainpage/about.html">About</a>
+        <div class="dropdown">
+            <button class="dropbutton" onclick="myFunction()">State
+                <i class="fa fa-caret-down"></i>
+                <!--a small triangle arrow-->
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../Selangor/backgroundVideo.html">Selangor</a>
+                <a href="../Sarawak/backgrooundVideo.html">Sarawak</a>
+                <a href="../Pahang/backgroundVideo.html">Pahang</a>
+                <a href="../Johor/backgroundVideo.html">Johor</a>
+                <a href="../Melaka/backgroundVideo.html">Melaka</a>
+                <a href="../Perak/backgroundVideo.html">Perak</a>
+                <a href="../Sabah/backgroundVideo.html">Sabah</a>
+                <a href="../Kedah/backgroundVideo.html">Kedah</a>
+                <a href="../Perlis/backgroundVideo.html">Perlis</a>
+                <a href="../Penang/backgroundVideo.html">Penang</a>
+                <a href="../Kelantan/backgroundVideo.html">Kelantan</a>
+                <a href="../Terengganu/backgroundVideo.html">Terengganu</a>
+                <a href="../Negeri_Sembilan/backgroundVideo.html">Negeri Sembilan</a>
+            </div>
+        </div>
+        <a href="../mainpage/contact.html">Contact</a>
+    </div>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbutton')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+
+    </script>
+    <!--End navbar-->
+
+    <!--opening-->
+    <div class="container">
+        <img src="Cameron-1.jpg" alt="Cameron Highlands" style="width: 100%; height: 500px;">
+    </div>
+
+    <!--introduction-->
+    <div class="main">
+        <br>
+        <h2 style="font-family: 'Protest Revolution', serif; font-size: 40px;">About</h2>
+        <p>Cameron Highlands, a serene collection of townships situated nearly 2000 meters above sea level, rests amid
+            tranquil mountains. Its cool resorts, tea plantations, and strawberry farms are spread across lush valleys
+            and rolling hills, creating an ideal setting for a relaxing retreat.
+
+            The region's peaceful atmosphere, beautiful landscapes, and cool climate offer a unique experience for
+            visitors. Known for its fertile mountain slopes, Cameron Highlands has a mild climate with daytime
+            temperatures around 25°C and cooler nights at 18°C, making it perfect for tea and vegetable cultivation.
+
+            Located in Pahang, Cameron Highlands is a 4-5 hour drive from Kuala Lumpur, Penang, and Taman Negara
+            National Park.
+        </p>
+        <br>
+        <br>
+        <h2 style="font-family: 'Protest Revolution', serif; font-size: 40px;">Detailed Information</h2>
+        <br>
+    </div>
+
+    <div class="card" style="background-color: forestgreen;">
+
+        <div class="image">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218441.12578961698!2d101.30549741402139!3d4.469774632465761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ca5082fa7f0d47%3A0x655625f6e1faf2f4!2z5b2t5Lqo6YeR6ams5Lym6auY5Y6f!5e1!3m2!1szh-CN!2smy!4v1723138581178!5m2!1szh-CN!2smy"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="title" style="color: aquamarine;">
+                <h3>Cameron Highlands Location</h3>
+            </div>
+            <div class="descript" style="color: aquamarine;">
+                <p>You can view the location here.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card" style="background-color: forestgreen;">
+
+        <div class="image">
+            <img src="mossy-forest-2153.jpg" alt="mossyforest" />
+            <div class="title" style="color: aquamarine;">
+                <h3>Mossy Forest</h3>
+            </div>
+            <div class="descript" style="color: aquamarine;">
+                <p>In addition to its vast tea plantations and strawberry farms, Cameron Highlands boasts several hidden
+                    treasures. One notable gem is the captivating Mossy Forest, a uniquely beautiful forest nestled on
+                    Mount Brinchang, the second highest peak in the region. At an altitude of 2,032 meters, this
+                    mystical forest is enveloped in mist and exudes a magical atmosphere.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card" style="background-color: forestgreen;">
+
+        <div class="image">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27303.64043322092!2d101.3726844048529!3d4.509867659722922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ca58e4b0f5d2a3%3A0x45b8d45bee198c44!2sMossy%20Forest!5e1!3m2!1szh-CN!2smy!4v1723138943002!5m2!1szh-CN!2smy"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="title" style="color: aquamarine;">
+                <h3>Mossy Forest Location</h3>
+            </div>
+            <div class="descript" style="color: aquamarine;">
+                <p>You can view the location here.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Video-->
+    <div class="video">
+        <h2 style="color:green;">Cameron Highlands Travel Guide</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L7mHvwO91TQ?si=p1j2DoRzahbUAT-l"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="adjust">
+        <p><a href="PahangMenu.html" class="button">Back</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Discover Malaysia | <a href="../mainpage/mainpage.html">Privacy Policy</a> | <a
+                href="../mainpage/mainpage.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+
+</html>

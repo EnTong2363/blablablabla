@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!--Add font-family-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Protest+Revolution|Merienda|Comfortaa">
+
+    <title>menu Penang</title>
+
+    <link rel="stylesheet" href="../CSS folder/menuPenang.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="../mainpage/mainpage.html">HOME</a></li>
+                    <li><a href="../mainpage/about.html">ABOUT US</a></li>
+                    <li><a href="../mainpage/contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h1>Penang</h1>
+                <p>Penang Island, known as Pulau Pinang in Malay, is a top travel destination for both Malaysians and
+                    international tourists. Recognized by CNN as one of the 22 best places to visit in 2023, the island
+                    offers a rich blend of culture, heritage, and natural beauty. Visitors can explore a variety of
+                    attractions, from lush tropical jungles and exotic beaches to historic landmarks and modern
+                    architecture. Penang is also home to stunning temples, mosques, and churches, showcasing its
+                    harmonious blend of cultural and religious traditions.</p>
+            </div>
+            <div class="col">
+
+                <div class="card card1" data-link="penangHill.html"></div>
+
+                <div class="card card2" data-link="batuFerringhi.html"></div>
+
+                <div class="card card3" data-link="komtar.html"></div>
+
+                <div class="card card4" data-link="pinangPeranakan.html"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Select all cards
+        const cards = document.querySelectorAll('.card');
+
+        // Add click event listener to each card
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Toggle the 'active' class on the clicked card
+                window.location.href = card.getAttribute('data-link');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

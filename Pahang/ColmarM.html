@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!--Add font-family-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Protest+Revolution|Merienda|Comfortaa|Zain">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Colmar Tropicale French Village</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: palegreen;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="../CSS folder/lwscreen.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/main.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/lwDetail.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/video.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/backbtn.css" />
+
+</head>
+
+<body>
+
+    <!--navbar-->
+    <div id="navbar">
+        <a href="../mainpage/mainpage.html">Home</a>
+        <a href="../mainpage/about.html">About</a>
+        <div class="dropdown">
+            <button class="dropbutton" onclick="myFunction()">State
+                <i class="fa fa-caret-down"></i>
+                <!--a small triangle arrow-->
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../Selangor/backgroundVideo.html">Selangor</a>
+                <a href="../Sarawak/backgrooundVideo.html">Sarawak</a>
+                <a href="../Pahang/backgroundVideo.html">Pahang</a>
+                <a href="../Johor/backgroundVideo.html">Johor</a>
+                <a href="../Melaka/backgroundVideo.html">Melaka</a>
+                <a href="../Perak/backgroundVideo.html">Perak</a>
+                <a href="../Sabah/backgroundVideo.html">Sabah</a>
+                <a href="../Kedah/backgroundVideo.html">Kedah</a>
+                <a href="../Perlis/backgroundVideo.html">Perlis</a>
+                <a href="../Penang/backgroundVideo.html">Penang</a>
+                <a href="../Kelantan/backgroundVideo.html">Kelantan</a>
+                <a href="../Terengganu/backgroundVideo.html">Terengganu</a>
+                <a href="../Negeri_Sembilan/backgroundVideo.html">Negeri Sembilan</a>
+            </div>
+        </div>
+        <a href="../mainpage/contact.html">Contact</a>
+    </div>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbutton')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+
+    </script>
+    <!--End navbar-->
+
+    <!--opening-->
+    <div class="container">
+        <img src="French-Village-3.jpg" alt="FrenchV" style="width: 100%; height: 600px;">
+    </div>
+
+    <!--introduction-->
+    <div class="main">
+        <br>
+        <h2 style="font-family: 'Protest Revolution', serif; font-size: 40px;">About of Colmar Tropicale French Village
+        </h2>
+        <p>Colmar Tropicale French Village is an ideal starting point for your adventure in Bukit Tinggi. This charming
+            area replicates the picturesque town of Colmar in Alsace, France, featuring vibrant shophouses and brick
+            towers. The architecture is authentically inspired by the original Colmar.
+        </p>
+        <br>
+        <br>
+        <h2 style="font-family: 'Protest Revolution', serif; font-size: 40px;">Detailed Information</h2>
+        <p></p>
+    </div>
+
+    <div class="card" style="background-color: forestgreen;">
+
+        <div class="image">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d276833.6173969303!2d101.67475354027391!3d3.3760554979776702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc17aaf046dd0d%3A0x8bd50007a6ae8fbc!2sColmar%20Malaysia%20(French%20Village)!5e1!3m2!1szh-CN!2smy!4v1723716201671!5m2!1szh-CN!2smy"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="title" style="color: aquamarine;">
+                <h3>Colmar Tropicale French Village Location</h3>
+            </div>
+            <div class="descript" style="color: aquamarine;">
+                <p>You can view the location here.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card" style="background-color: forestgreen;">
+
+        <div class="image">
+            <img src="japanese.jpeg" alt="japaneseV" />
+            <div class="title" style="color: aquamarine;">
+                <h3>Japanese Village at Colmar Tropicale</h3>
+            </div>
+            <div class="descript" style="color: aquamarine;">
+                <p>The Japanese Village, perched on a hilltop at Berjaya Hills in Bukit Tinggi, offers a serene
+                    Japan-themed experience just five minutes from Colmar Tropicale Resort. The village features a
+                    Japanese Tea House, Botanical Garden, Tatami Spa, and more. Visitors can enjoy rock pools, koi
+                    ponds, flower gardens, and traditional tea ceremonies. Surrounded by rainforest, it's also a popular
+                    spot for bird watching with scenic valley views along the trails.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card" style="background-color: forestgreen;">
+
+        <div class="image">
+            <img src="french02.jpg" alt="JapanPlace" />
+            <div class="title" style="color: aquamarine;">
+                <h3>Book your Stay</h3>
+            </div>
+            <div class="descript" style="color: aquamarine;">
+                <p>You can booking your stay at <a href="https://colmartropicale.com.my/japanese-village/">here.</a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Video-->
+    <div class="video">
+        <h2 style="color:green;">Beauty of Colmar Tropicale & Japanese Garden</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qa_12rE4kNk?si=80BDK9LWU89ogLbv"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="adjust">
+        <p><a href="PahangMenu.html" class="button">Back</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Discover Malaysia | <a href="../mainpage/mainpage.html">Privacy Policy</a> | <a
+                href="../mainpage/mainpage.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+
+</html>

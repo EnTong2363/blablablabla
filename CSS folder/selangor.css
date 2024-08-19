@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*introduction box*/
+.introduction { 
+    background-color: peachpuff;
+    padding: 80px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    box-shadow: 0 5px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* 3D and color animation for SARAWAK */
+@keyframes color-change {
+    0% { color: #ff5e5e; }
+    25% { color: #df5eff; }
+    50% { color: #815eff; }
+    75% { color: #8cff5e; }
+    100% { color: #5effb5; }
+}
+
+.animated-text {
+    font-size: 4rem;
+    text-align: center;
+    animation: color-change 5s infinite alternate;
+    text-shadow: 2px 2px 0px #3498db, 4px 4px 0px #2980b9, 6px 6px 0px #1c5d99;
+    transform: rotateX(10deg) rotateY(10deg);
+    transition: transform 0.5s;
+}
+
+.animated-text:hover {
+    transform: rotateX(0deg) rotateY(0deg);
+}
+
+/*map of selangor*/
+img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Center the text below the image */
+.centered-text {
+    text-align: center;
+    margin-top: -20px; 
+    font-family: 'Times New Roman', serif; 
+}
+
+/*horizontal straight line*/
+.line {
+    width: 1000px;
+    height: 10px;
+    background-color: #3498db; 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px; 
+    position: absolute;
+    top: 177%; /*adjust up and down*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*6 boxes*/
+.boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0 20px;
+    max-width: 1200px; /* Adjust this value as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    width: calc(50% - 20px); /* 50% width minus some space for gap */
+    background-color: peachpuff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 40px; /* Increase space between rows */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.box img {
+    width: 150%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    margin-top: 10px;
+    font-size: 16px; 
+    text-align: left;
+}

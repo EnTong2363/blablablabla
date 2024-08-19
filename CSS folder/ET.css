@@ -1,0 +1,378 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('malaysia.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.container {
+    background: rgba(252, 228, 206, 0.9);
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-out;
+    transition: transform 0.3s ease-in-out; 
+
+}
+
+.container:hover {
+    transform: scale(1.02); /* [NEW] Slight zoom effect on hover */
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 700% 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow 8s linear infinite;
+    transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+    color: #000; /* [NEW] Change text color on hover */
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    color: #f80b0b;
+    border-bottom: 2px solid #fa3200;
+    animation: highlight 1.5s infinite;
+    animation: bounceIn 1.5s;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #f06800;
+    animation: highlight 1.5s;
+    animation: fadeInUp 1s ease-out;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    animation: slideInUp 1.5s ease;
+}
+
+img {
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    animation: fadeInZoom 2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05); /* [NEW] Slight zoom effect on hover */
+}
+
+.attraction {
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #ff7e5f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: pulse 2s infinite;
+    animation: slideInUp 1s ease-out;
+}
+
+.button:hover {
+    background-color: #feb47b;
+    transform: scale(1.05);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.show {
+    display: block;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #feb47b;
+    transform: scale(1.05);
+}
+
+.back-to-top.show {
+    display: block;
+}
+
+.hotel-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hotel {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hotel img {
+    width: 100px;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    
+}
+
+.hotel .name {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.hotel .rating {
+    margin-bottom: 10px;
+}
+
+.hotel .rating i {
+    color: gold;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border: 0;
+}
+
+iframe[src*="google.com/maps"] {
+    height: 500px; 
+}
+
+iframe[src*="youtube.com/embed"] {
+    height: 450px; 
+}
+
+@media (max-width: 600px) {
+    iframe[src*="google.com/maps"] {
+        height: 300px; 
+    }
+
+    iframe[src*="youtube.com/embed"] {
+        height: 200px; 
+    }
+}
+
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes highlight {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes highlightTitle {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+

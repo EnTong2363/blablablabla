@@ -1,0 +1,59 @@
+body {
+    animation: fadeInDown 1.5s ease-in-out forwards;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #0291d3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*main*/
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.main h2 {
+    font-family: Comfortaa;
+    font-size: 30px;
+    text-align: center;
+    color: darkblue;
+}
+
+.main p {
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+/*end main*/

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedah</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS folder/styles.css">
+    <link rel="stylesheet" href="../CSS folder/kedahstyles.css">
+    <link rel="stylesheet" href="../CSS folder/navbar.css">
+    <link rel="stylesheet" href="../CSS folder/dropdown.css">
+
+</head>
+
+<body>
+
+    <!--navbar-->
+    <div id="navbar">
+        <a href="../mainpage/mainpage.html">Home</a>
+        <a href="../mainpage/about.html">About</a>
+        <div class="dropdown">
+            <button class="dropbutton" onclick="myFunction()">State
+                <i class="fa fa-caret-down"></i>
+                <!--a small triangle arrow-->
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../Selangor/backgroundVideo.html">Selangor</a>
+                <a href="../Sarawak/backgrooundVideo.html">Sarawak</a>
+                <a href="../Pahang/backgroundVideo.html">Pahang</a>
+                <a href="../Johor/backgroundVideo.html">Johor</a>
+                <a href="../Melaka/backgroundVideo.html">Melaka</a>
+                <a href="../Perak/backgroundVideo.html">Perak</a>
+                <a href="../Sabah/backgroundVideo.html">Sabah</a>
+                <a href="../Kedah/backgroundVideo.html">Kedah</a>
+                <a href="../Perlis/backgroundVideo.html">Perlis</a>
+                <a href="../Penang/backgroundVideo.html">Penang</a>
+                <a href="../Kelantan/backgroundVideo.html">Kelantan</a>
+                <a href="../Terengganu/backgroundVideo.html">Terengganu</a>
+                <a href="../Negeri_Sembilan/backgroundVideo.html">Negeri Sembilan</a>
+            </div>
+        </div>
+        <a href="../mainpage/contact.html">Contact</a>
+    </div>
+    
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbutton')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+
+    </script>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Explore Kedah</h1>
+            <p>Discover the natural wonders and diverse cultures of Kedah, Malaysia. Enjoy the breathtaking landscapes
+                and vibrant traditions of this unique state.</p>
+        </div>
+    </div>
+
+    <main>
+        <section class="about">
+            <h2>What About Kedah</h2>
+            <div class="image-container">
+                <p class="animated-text">Kedah, located in the northwest of Peninsular Malaysia, is known as the "Rice
+                    Bowl of Malaysia" due to its vast paddy fields. The state is rich in history, culture, and natural
+                    beauty, making it a perfect destination for those seeking a blend of tradition and tranquility.</p>
+                <p class="animated-text">Kedah is a paradise for nature lovers and history buffs alike. Whether you're
+                    exploring the ancient ruins of Lembah Bujang or enjoying the serene beaches of Langkawi, Kedah
+                    offers a diverse range of experiences for visitors.</p>
+                <p class="animated-text">The people of Kedah are known for their warm hospitality and deep-rooted
+                    traditions. Visitors can immerse themselves in local culture through the state's unique festivals,
+                    traditional crafts, and local delicacies.</p>
+                <p class="animated-text">One of Kedah's highlights is Gunung Jerai, a mountain that offers stunning
+                    panoramic views and is a popular spot for hikers. Additionally, the Lembah Bujang Archaeological
+                    Museum provides insight into Kedah's ancient history as one of Southeast Asia's oldest
+                    civilizations.</p>
+            </div>
+        </section>
+
+        <section class="attractions">
+            <h2>Attractions</h2>
+            <div class="card-container">
+                <a href="https://www.langkawi.com/" class="card">
+                    <h3>Langkawi</h3>
+                    <p>Langkawi is a stunning archipelago off the coast of Kedah, known for its beautiful beaches,
+                        crystal-clear waters, and lush tropical landscapes. It is a popular destination for both
+                        relaxation and adventure.</p>
+                    <div class="card-attribution"><img src="langkawi.avif" alt="Langkawi"></div>
+                </a>
+                <a href="https://www.tripadvisor.com/Attraction_Review-g11751426-d5499303-Reviews-or15-Gunung_Jerai-Kuala_Ketil_Kuala_Muda_District_Kedah.html"
+                    class="card">
+                    <h3>Gunung Jerai</h3>
+                    <p>Gunung Jerai, a prominent mountain in Kedah, offers breathtaking views and a cool, refreshing
+                        climate. It's a popular spot for nature lovers, hikers, and those looking to escape the tropical
+                        heat.</p>
+                    <div class="card-attribution"><img src="gunung jerai.webp" alt="Gunung Jerai"></div>
+                </a>
+                <a href="https://www.alltrails.com/ar/trail/malaysia/kedah/gunung-keriang" class="card">
+                    <h3>Gunung Keriang</h3>
+                    <p>The Limestone Caves of Kedah are a natural wonder, featuring stunning stalactites and
+                        stalagmites. These caves are also home to a variety of wildlife and offer a unique adventure for
+                        explorers.</p>
+                    <div class="card-attribution"><img src="gunung keriang.jpg" alt="Limestone Caves"></div>
+                </a>
+                <a href="http://www.jmm.gov.my/ms/muzium/muzium-arkeologi-lembah-bujang" class="card">
+                    <h3>Lembah Bujang</h3>
+                    <p>Lembah Bujang is an archaeological site that dates back over 1,500 years. It is home to ancient
+                        ruins and artifacts from one of Southeast Asia's earliest civilizations, offering a glimpse into
+                        Kedah's rich history.</p>
+                    <div class="card-attribution"><img src="lembang bujang.jpg" alt="Lembah Bujang"></div>
+                </a>
+            </div>
+        </section>
+
+        <section class="getting-there">
+            <h2>Getting There</h2>
+            <h3 style="color: #d17c44;">Click Picture for booking transportation</h3>
+
+            <h1> </h1>
+            <h4>Cheap Airplane Ticket to Kedah：</h4>
+            <p>
+                <a
+                    href="https://www.airasia.com/flight/en/gb?from=KUL&to=TGG&gad_source=1&gclid=Cj0KCQjwq_G1BhCSARIsACc7Nxp7juP5P3FROAY-XmjCDWqg2mutEFgdxutPLZqdO6z5bvhbmkIzaucaAnTVEALw_wcB&gclsrc=aw.ds">
+                    <img src="airplanegif.gif" alt="Airplane" style=" height:200px;">
+                </a>
+            </p>
+
+            <p> </p>
+            <h4>Train to Kedah：</h4>
+            <p><a href="https://www.ktmb.com.my/MapsAndRoute.html">
+                    <img src="train gif.gif" alt="Train" style="width: 80 px; height: 200px;"></a></p>
+
+            <p> </p>
+            <h4>Bus to Kedah：</h4>
+            <p><a
+                    href="https://www.redbus.my/bus/bus-online-ticket?gad_source=1&gclid=Cj0KCQjwq_G1BhCSARIsACc7NxraxEIINLEaSXd0EsQ5bhZkXBh55VqowpZMDSFC8pEv-gqJsR7MlHYaAkooEALw_wcB">
+                    <img src="busgif.gif" alt="Bus" style="width: 80 px; height:200px;">
+                </a>
+        </section>
+
+        <div class="back-link">
+            <a href="../mainpage/mainpage.html" class="btn">Back to Home Page</a>
+        </div>
+    </main>
+
+    <button class="btn" onclick="window.scrollTo({top:0,behavior: 'smooth' });">Back to Top</button>
+
+    <script>
+        // Show or hide the back-to-top button based on scroll position
+        window.addEventListener('scroll', function () {
+            const button = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Discover Malaysia | <a href="../mainpage/mainpage.html">Privacy Policy</a> | <a
+                href="../mainpage/mainpage.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+
+</html>

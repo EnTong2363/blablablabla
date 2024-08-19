@@ -1,0 +1,30 @@
+#navbar {
+    overflow: hidden;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: grey;
+    color: white;
+}
+
+#navbar a.active {
+    background-color: white;
+    color: black;
+}

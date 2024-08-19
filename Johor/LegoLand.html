@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!--Add font-family-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Protest+Revolution|Merienda|Comfortaa|Zain">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Legoland Theme Park</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: mediumorchid;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="../CSS folder/lwscreen.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/main.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/lwDetail.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/video.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/backbtn.css" />
+
+    <script src="legoMap.js" defer></script>
+
+</head>
+
+<body>
+
+    <!--navbar-->
+    <div id="navbar">
+        <a href="../mainpage/mainpage.html">Home</a>
+        <a href="../mainpage/about.html">About</a>
+        <div class="dropdown">
+            <button class="dropbutton" onclick="myFunction()">State
+                <i class="fa fa-caret-down"></i>
+                <!--a small triangle arrow-->
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../Selangor/backgroundVideo.html">Selangor</a>
+                <a href="../Sarawak/backgrooundVideo.html">Sarawak</a>
+                <a href="../Pahang/backgroundVideo.html">Pahang</a>
+                <a href="../Johor/backgroundVideo.html">Johor</a>
+                <a href="../Melaka/backgroundVideo.html">Melaka</a>
+                <a href="../Perak/backgroundVideo.html">Perak</a>
+                <a href="../Sabah/backgroundVideo.html">Sabah</a>
+                <a href="../Kedah/backgroundVideo.html">Kedah</a>
+                <a href="../Perlis/backgroundVideo.html">Perlis</a>
+                <a href="../Penang/backgroundVideo.html">Penang</a>
+                <a href="../Kelantan/backgroundVideo.html">Kelantan</a>
+                <a href="../Terengganu/backgroundVideo.html">Terengganu</a>
+                <a href="../Negeri_Sembilan/backgroundVideo.html">Negeri Sembilan</a>
+            </div>
+        </div>
+        <a href="../mainpage/contact.html">Contact</a>
+    </div>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbutton')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+
+    </script>
+    <!--End navbar-->
+
+    <!--opening-->
+    <div class="container">
+        <img src="lego.jpg" alt="legoland" style="width: 100%; height: 700px;">
+    </div>
+
+    <!--introduction-->
+    <div class="main">
+        <br>
+        <h2 style="font-family: 'Protest Revolution', serif; font-size: 40px;">About LEGOLAND&reg; Malaysia Resort</h2>
+        <p>LEGOLAND Malaysia Resort features the best rides, slides, shows, and attractions from LEGOLAND Parks
+            worldwide, customized for the local environment. Spanning an area larger than 50 football pitches, it houses
+            over 15,000 LEGO models made from 60 million LEGO bricks. Other LEGOLAND Resorts are in Japan, the UAE,
+            Denmark, Germany, the US, and the UK.
+        </p>
+        <br>
+        <h2 style="font-family: 'Protest Revolution', serif; font-size: 40px;">WHERE IMAGINATIONS COME TO LIFE</h2>
+        <p>For a family day full of fun, visit LEGOLAND® Malaysia Resort, the ultimate destination for imagination!
+            Whether earning your first driving license at LEGO&reg; City Driving School, riding a Dragon through a
+            medieval
+            castle, or battling skeletons in LEGO NINJAGO&reg;, the resort offers over 80 rides, live shows, and
+            attractions—where imaginations come to life.
+        </p>
+        <br>
+        <h2 style="font-family: 'Protest Revolution', serif; font-size: 40px;">Detailed Information</h2>
+        <p></p>
+    </div>
+
+    <div class="card" style="background-color: mediumpurple;">
+
+        <div class="image">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3490.007963402742!2d103.62948920000001!3d1.4272363999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0b8c3c76ed33%3A0x815b08d21944354b!2z5LmQ6auY5LmQ5Zut!5e1!3m2!1szh-CN!2smy!4v1723170962483!5m2!1szh-CN!2smy"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="title" style="color: aqua;">
+                <h3>LEGOLAND Malaysia Location</h3>
+            </div>
+            <div class="descript" style="color: aqua;">
+                <p>You can view the location here.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card" style="background-color: mediumpurple;">
+
+        <div class="image">
+            <img src="LEGOLANDMalaysiaTicket.jpg" alt="ticket" />
+            <div class="title" style="color: aqua;">
+                <h3>LEGOLAND Ticket</h3>
+            </div>
+            <div class="descript" style="color: aqua;">
+                <p>Choose from 3 AWESOME parks packed with over 80 shows, rides, slides, and attractions, from
+                    rollercoasters and water slides to LIVE shows and LEGO® everywhere! Can't pick just one? Let's find
+                    the perfect combo for you!
+                </p>
+                <br>
+                <p><strong>Opening hours: </strong></p>
+                <p>Water Park: 10am - 6pm (Last entry at 5 pm)</p>
+                <p>SEA LIFE: 10am - 6pm (Last entry at 5 pm)</p>
+                <a href="https://www.legoland.com.my/tickets-passes/day-tickets/">More Information of Ticket</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card" style="background-color: mediumpurple;">
+
+        <div class="image">
+            <img src="legoland-map.jpg" alt="map">
+            <div class="title" style="color: aqua;">
+                <h3>Legoland Map</h3>
+            </div>
+            <div class="descript" style="color: aqua;">
+                <p>I hope this map is useful for you. Have a great time!</p>
+                <br>
+                <p>It looks small? No worries, let's
+                    <a href="https://www.legoland.com.my/media/dfjl2wip/english-e-version-q1-2021_website-7.pdf">Zoom
+                        In</a>.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="adjust">
+        <p><a href="JohorMenu.html" class="button">Back</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Discover Malaysia | <a href="../mainpage/mainpage.html">Privacy Policy</a> | <a
+                href="../mainpage/mainpage.html">Terms of Service</a></p>
+    </footer>
+    
+</body>
+
+</html>

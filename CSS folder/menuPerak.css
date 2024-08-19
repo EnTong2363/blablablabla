@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../Perak/IPOH3.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    animation: fadeIn 1s ease-out;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    animation: slideIn 0.5s ease-out;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+    transform: scale(1.2);
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    position: relative;
+    animation: bounceIn 0.5s ease-out;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffbb00;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+.col:nth-child(2) {
+    margin-left: 150px; 
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+    font-family: 'Protest Revolution', serif;
+    animation: fadeInUp 1s ease-out;
+}
+
+p {
+    color: #fff;
+    font-size: 19px;
+    line-height: 20px;
+    text-align: justify;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+.card {
+    width: 220px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s, background-color 0.5s, opacity 0.5s;
+    position: relative;
+    animation: fadeInUp 1s ease-out;
+}
+
+.card1 {
+    background-image: url(../Perak/lostworld.jpg);
+}
+
+.card2 {
+    background-image: url(../Perak/han-chin-pet-soo.jpg);
+}
+
+.card3 {
+    background-image: url(../Perak/concubineLanes.jpg);
+}
+
+.card4 {
+    background-image: url(../Perak/tiger.jpg);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    opacity: 0.7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width:800px) and (max-width: 1046px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .card {
+        width: 100%;
+        height: 100px;
+    }
+
+    .col:nth-child(2) {
+        margin-right: 100px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width: 800px) {
+    .container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .card {
+        width: 100%;
+        height: 100px;
+    }
+
+    .col:nth-child(2) {
+        margin-right: 100px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!--Add font-family-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Protest+Revolution|Merienda|Comfortaa">
+
+    <title>Johor</title>
+
+    <link rel="stylesheet" href="../CSS folder/menuJohor.css">
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="../mainpage/mainpage.html">HOME</a></li>
+                    <li><a href="../mainpage/about.html">ABOUT</a></li>
+                    <li><a href="../mainpage/contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h1>Johor</h1>
+                <p>Johor Bahru (JB), Malaysia's southernmost and second-largest city, is home to over 2.7 million
+                    people, including its suburbs. The ongoing Iskandar megaproject aims to make JB the country's
+                    largest financial hub. Connected to Singapore by two bridges, JB attracts around 16 million tourists
+                    annually. Many residents work in Singapore for better opportunities, while Singaporeans visit JB for
+                    affordable shopping. As a key industrial, tourism, and commercial center, JB boasts one of Southeast
+                    Asia's highest population growth rates and is part of the economically thriving Sijori Growth
+                    Triangle.
+                </p>
+            </div>
+            <div class="col">
+
+                <div class="card card1" data-link="LegoLand.html"></div>
+
+                <div class="card card2" data-link="JPreOut.html"></div>
+
+                <div class="card card3" data-link="DesaruFF.html"></div>
+
+                <div class="card card4" data-link="AngryBird.html"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Select all cards
+        const cards = document.querySelectorAll('.card');
+
+        // Add click event listener to each card
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Toggle the 'active' class on the clicked card
+                window.location.href = card.getAttribute('data-link');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

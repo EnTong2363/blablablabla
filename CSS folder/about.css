@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url('/Assignment1/Assignment/mainpage/background\ color.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+    background-position: center; /* Centers the background image */
+}
+
+.container {
+    text-align: center;
+    background:rgba(255, 218, 185, 0);
+    padding: 30px; /* Adds some padding */
+    border-radius: 12px; /* Rounds the corners of the container */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+    margin: auto;
+    max-width: 80%; /* Adjust width as needed */
+}
+
+.header {
+    padding-top: 30px;
+    color: #444;
+    font-size: 20px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.sub-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teams {
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    background: #fff; /* White background for team cards */
+    border-radius: 12px;
+}
+
+.teams:hover {
+    background: greenyellow;
+    border-radius: 12px;
+    transform: perspective(1000px) rotateX(-5deg) rotateY(5deg); /* Tilts the box for a 3D effect */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.teams img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px; /* Optional: Gives a smoother look */
+}
+
+.name {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.desig {
+    font-style: italic;
+    color: #888;
+}
+
+.about {
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+
+@media screen and (max-width: 600px) {
+    .teams {
+        max-width: 100%;
+    }
+}

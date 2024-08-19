@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!--Add font-family-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Protest+Revolution|Merienda|Comfortaa">
+
+    <title>PerakMenu</title>
+
+    <link rel="stylesheet" href="../CSS folder/menuPerak.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="../mainpage/mainpage.html">HOME</a></li>
+                    <li><a href="../mainpage/about.html">ABOUT US</a></li>
+                    <li><a href="../mainpage/contact.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h1>Perak</h1>
+                <p>Welcome to Perak! As the second largest state in Peninsular Malaysia, Perak is truly a hidden gem.
+                    With a history rooted in the British colonial era, Perak's growth was fueled by tin mining and
+                    rubber tree plantations. Today, you can still explore the lasting legacy of these industries.</p>
+            </div>
+            <div class="col">
+
+                <div class="card card1" data-link="LostWorld.html"></div>
+
+                <div class="card card2" data-link="HanCPS.html"></div>
+
+                <div class="card card3" data-link="Concubine.html"></div>
+
+                <div class="card card4" data-link="ZooTaip.html"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Select all cards
+        const cards = document.querySelectorAll('.card');
+
+        // Add click event listener to each card
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Toggle the 'active' class on the clicked card
+                window.location.href = card.getAttribute('data-link');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

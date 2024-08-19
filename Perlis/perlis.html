@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perlis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS folder/perlisstyle.css">
+    <link rel="stylesheet" href="../CSS folder/navbar.css">
+    <link rel="stylesheet" href="../CSS folder/dropdown.css">
+    
+</head>
+
+<body>
+
+   <!--navbar-->
+   <div id="navbar">
+    <a href="../mainpage/mainpage.html">Home</a>
+    <a href="../mainpage/about.html">About</a>
+    <div class="dropdown">
+        <button class="dropbutton" onclick="myFunction()">State
+            <i class="fa fa-caret-down"></i>
+            <!--a small triangle arrow-->
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+            <a href="../Selangor/backgroundVideo.html">Selangor</a>
+            <a href="../Sarawak/backgrooundVideo.html">Sarawak</a>
+            <a href="../Pahang/backgroundVideo.html">Pahang</a>
+            <a href="../Johor/backgroundVideo.html">Johor</a>
+            <a href="../Melaka/backgroundVideo.html">Melaka</a>
+            <a href="../Perak/backgroundVideo.html">Perak</a>
+            <a href="../Sabah/backgroundVideo.html">Sabah</a>
+            <a href="../Kedah/backgroundVideo.html">Kedah</a>
+            <a href="../Perlis/backgroundVideo.html">Perlis</a>
+            <a href="../Penang/backgroundVideo.html">Penang</a>
+            <a href="../Kelantan/backgroundVideo.html">Kelantan</a>
+            <a href="../Terengganu/backgroundVideo.html">Terengganu</a>
+            <a href="../Negeri_Sembilan/backgroundVideo.html">Negeri Sembilan</a>
+        </div>
+    </div>
+    <a href="../mainpage/contact.html">Contact</a>
+</div>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbutton')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+    </script>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Explore Perlis</h1>
+            <p>Discover the natural wonders and diverse cultures of Perlis, Malaysia. Enjoy the breathtaking landscapes and vibrant traditions of this unique state.</p>
+        </div>
+    </div>
+    
+    <main>
+        <section class="about">
+            <h2>What About Perlis</h2>
+            <div class="image-container">
+                <p class="animated-text">Perlis, the smallest state in Malaysia, is located in the northern part of the Peninsular Malaysia, bordering Thailand. Despite its size, Perlis is rich in natural beauty and cultural heritage, offering a peaceful escape from the hustle and bustle of city life.</p>
+                <p class="animated-text">Perlis is known for its scenic paddy fields, serene rural landscapes, and historic sites. Visitors can explore the limestone hills, visit the famous Snake and Reptile Farm, or take a relaxing drive through the countryside to experience the charm of this quaint state.</p>
+                <p class="animated-text">The people of Perlis are known for their friendliness and deep-rooted traditions. Visitors can enjoy local cultural experiences, including traditional dances, local crafts, and the unique flavors of Perlis cuisine.</p>
+                <p class="animated-text">One of Perlis's highlights is Gua Kelam, a limestone cave known for its mysterious atmosphere and underground river. The state is also home to the Royal Palace of Perlis, a symbol of the state's royal heritage.</p>
+            </div>
+        </section>
+        
+        <section class="attractions">
+            <h2>Attractions</h2>
+            <div class="card-container">
+                <a href="https://www.theislanddrum.com/perlis-snake-and-reptile-farm-perlis-malaysia/" class="card">
+                    <h3>Gua Kelam</h3>
+                    <p>Gua Kelam is one of Perlis's most famous attractions, known for its dark limestone cave and an underground river. It's a popular spot for adventure seekers and nature enthusiasts.</p>
+                    <div class="card-attribution"><img src="guakelam.jpg" alt="Gua Kelam"></div>
+                </a>
+                <a href="https://www.malaysia.travel/places/perlis/awang-batin" class="card">
+                    <h3>Wang Kelian</h3>
+                    <p>Wang Kelian, located near the Thailand border, offers breathtaking views of the surrounding mountains and valleys. It's a great spot for hiking, camping, and experiencing the beauty of nature.</p>
+                    <div class="card-attribution"><img src="wang kelian.jpg" alt="Wang Kelian"></div>
+                </a>
+                <a href="https://www.theislanddrum.com/perlis-snake-and-reptile-farm-perlis-malaysia/" class="card">
+                    <h3>Snake and Reptile Farm</h3>
+                    <p>The Snake and Reptile Farm in Perlis is the largest of its kind in Malaysia, housing a variety of snakes, crocodiles, and other reptiles. It's a must-visit for those interested in wildlife.</p>
+                    <div class="card-attribution"><img src="snake.jpg" alt="Snake and Reptile Farm"></div>
+                </a>
+                <a href="https://www.holidaygogogo.com/perlis-royal-palace/" class="card">
+                    <h3>Royal Palace of Perlis</h3>    
+                    <p>The Royal Palace of Perlis, also known as Istana Arau, is a symbol of the state's royal heritage. The palace is an architectural marvel and offers insights into the history and culture of Perlis.</p>
+                    <div class="card-attribution"><img src="Perlis-Royal-Palace.jpg" alt="Royal Palace of Perlis"></div>
+                </a>
+            </div>
+        </section>    
+    
+        <section class="getting-there">
+            <h2>Getting There</h2>
+            <h3 style="color: #d85b07;">Click Picture for booking transportation</h3>
+
+            <h1> </h1>
+            <h4>Cheap Airplane Ticket to Perlis：</h4>
+            <p>
+                <a href="https://www.airasia.com/flight/en/gb?from=KUL&to=TGG&gad_source=1&gclid=Cj0KCQjwq_G1BhCSARIsACc7Nxp7juP5P3FROAY-XmjCDWqg2mutEFgdxutPLZqdO6z5bvhbmkIzaucaAnTVEALw_wcB&gclsrc=aw.ds">
+                    <img src="airplanegif.gif" alt="Airplane" style="width: 100 px; height:200px;">
+                </a>
+            </p>
+
+            <p> </p>
+            <h4>Train to Perlis：</h4>
+            <p><a href="https://www.ktmb.com.my/MapsAndRoute.html">
+                <img src="train gif.gif" alt="Train" style="width: 80 px; height: 200px;"></a></p>
+
+            <p> </p>
+            <h4>Bus to Perlis：</h4>
+            <p><a href="https://www.redbus.my/bus/bus-online-ticket?gad_source=1&gclid=Cj0KCQjwq_G1BhCSARIsACc7NxraxEIINLEaSXd0EsQ5bhZkXBh55VqowpZMDSFC8pEv-gqJsR7MlHYaAkooEALw_wcB">
+                <img src="busgif.gif" alt="Bus" style="width: 80 px; height:200px;">
+                </a>
+        </section>
+        
+        <div class="back-link">
+            <a href="../mainpage/mainpage.html" class="btn">Back to Home Page</a>
+        </div>
+    </main>
+
+    <button class="btn" onclick="window.scrollTo({top:0,behavior: 'smooth' });">Back to Top</button>
+
+    <script>
+        // Show or hide the back-to-top button based on scroll position
+        window.addEventListener('scroll', function () {
+            const button = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Discover Malaysia | <a href="../mainpage/mainpage.html">Privacy Policy</a> | <a
+                href="../mainpage/mainpage.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>

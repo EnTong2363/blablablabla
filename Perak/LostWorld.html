@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!--Add font-family-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Protest+Revolution|Merienda|Comfortaa|Zain">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Lost World</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: antiquewhite;
+            align-items: center;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="../CSS folder/lwscreen.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/main.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/lwDetail.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/lwDetail.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS folder/backbtn.css" />
+
+</head>
+
+<body>
+
+    <!--navbar-->
+    <div id="navbar">
+        <a href="../mainpage/mainpage.html">Home</a>
+        <a href="../mainpage/about.html">About</a>
+        <div class="dropdown">
+            <button class="dropbutton" onclick="myFunction()">State
+                <i class="fa fa-caret-down"></i>
+                <!--a small triangle arrow-->
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../Selangor/backgroundVideo.html">Selangor</a>
+                <a href="../Sarawak/backgrooundVideo.html">Sarawak</a>
+                <a href="../Pahang/backgroundVideo.html">Pahang</a>
+                <a href="../Johor/backgroundVideo.html">Johor</a>
+                <a href="../Melaka/backgroundVideo.html">Melaka</a>
+                <a href="../Perak/backgroundVideo.html">Perak</a>
+                <a href="../Sabah/backgroundVideo.html">Sabah</a>
+                <a href="../Kedah/backgroundVideo.html">Kedah</a>
+                <a href="../Perlis/backgroundVideo.html">Perlis</a>
+                <a href="../Penang/backgroundVideo.html">Penang</a>
+                <a href="../Kelantan/backgroundVideo.html">Kelantan</a>
+                <a href="../Terengganu/backgroundVideo.html">Terengganu</a>
+                <a href="../Negeri_Sembilan/backgroundVideo.html">Negeri Sembilan</a>
+            </div>
+        </div>
+        <a href="../mainpage/contact.html">Contact</a>
+    </div>
+
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbutton')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+
+    </script>
+    <!--End navbar-->
+
+    <div class="container">
+        <img src="lostworld2.jpg" alt="lostworld" style="width: 100%;">
+    </div>
+
+    <div class="main">
+        <br>
+        <h2 style="font-family: 'Protest Revolution', serif; font-size: 40px;">About</h2>
+        <p>Lost World of Tambun offers an exciting and family-friendly adventure with lush jungles, ancient limestone
+            formations, natural hot springs, and seven unique attraction parks. It's an ideal day-and-night
+            eco-adventure
+            spot for all ages, with the Lost World Hotel nearby for a restful stay after a day of exploration.
+        </p>
+        <br>
+        <br>
+        <h2 style="font-family: 'Protest Revolution', serif; font-size: 40px;">Detailed Information</h2>
+        <p></p>
+    </div>
+
+    <div class="card">
+        <div class="image">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3474.542776892877!2d101.1519222249788!3d4.625482845349264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31caed5bca279cdf%3A0x408a253cdbfcbb2d!2sLost%20World%20of%20Tambun%20Theme%20Park!5e1!3m2!1szh-CN!2smy!4v1723122639699!5m2!1szh-CN!2smy"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="title">
+                <h3>Location</h3>
+            </div>
+            <div class="descript">
+                <p>You can view the location here.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image">
+            <img src="lostworld3.jpg" alt="ticket" />
+            <div class="title">
+                <h3>Ticket</h3>
+            </div>
+            <div class="descript">
+                <h4><b><u>Opening Time:</u></b></h4>
+                <p>Weekdays: 11.00 am ~ 6.00 pm (Closed Tuesday, except on Malaysian school & public holidays) </p>
+                <p>Weekends: 10.00 am ~ 6.00pm</p>
+                <br>
+                <p>Adult (13 years old and above): RM 135</p>
+                <p>Child (12 years old and below): RM 128</p>
+                <p>Senior Citizen (60 years old and above): RM 128</p>
+                <a href="https://sunwaylostworldoftambun.com/tickets-rentals/">Read more</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image">
+            <img src="lwmap.jpg" alt="map" />
+            <div class="title">
+                <h3>Park Map</h3>
+            </div>
+            <div class="descript">
+                <p>I hope this map is useful for you. Have a great time!</p>
+                <br>
+                <p>It looks small? No worries, let's
+                    <a href="lwmap.jpg">Zoom In</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="adjust">
+        <p><a href="PerakMenu.html" class="button">Back</a></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Discover Malaysia | <a href="../mainpage/mainpage.html">Privacy Policy</a> | <a
+                href="../mainpage/mainpage.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+
+</html>
